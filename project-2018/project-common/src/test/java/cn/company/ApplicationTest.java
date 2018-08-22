@@ -1,5 +1,6 @@
 package cn.company;
 
+import cn.company.project.common.utils.LocalhostIpUtil;
 import cn.company.project.common.utils.RegIPUtil;
 import junit.framework.TestCase;
 
@@ -17,4 +18,10 @@ public class ApplicationTest extends TestCase {
         System.out.println(ip);
     }
 
+    /**
+     * 测试获取本地IP地址
+     */
+    public void testGetLocalIP() {
+        System.out.println(new LocalhostIpUtil().getServerIp());
+    }
 }
